@@ -56,9 +56,10 @@ chmod +x hello-world.sh
 ./hello-world.sh
 ```
 
+## What s Next
 
-
-
+- we go for a bit more complicated script 
+- follow this link to get on it ![link].
 
 ## Resources
 
