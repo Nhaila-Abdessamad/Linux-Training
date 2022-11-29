@@ -54,8 +54,8 @@ chmod +x hello-world.sh
 ## What s Next
 
 - we go for a bit more complicated script 
-- follow this link to get on it [link](link).
+- follow this link to get on it [link](https://github.com/Nhaila-Abdessamad/Linux-Training/blob/main/BASH%20Scripting/input-name-script.md).
 
 ## Resources
 
-
+- [advanced_bash_scripting linuxtopia](https://www.linuxtopia.org/online_books/advanced_bash_scripting_guide/complexfunct.html)

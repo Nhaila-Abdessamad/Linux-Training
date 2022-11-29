@@ -62,4 +62,5 @@ chmod +x input-script.sh
 
 ## Resources
 
+- [advanced_bash_scripting linuxtopia](https://www.linuxtopia.org/online_books/advanced_bash_scripting_guide/complexfunct.html)
 
