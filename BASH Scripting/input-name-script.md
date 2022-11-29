@@ -1,7 +1,7 @@
 
 ## Table of Contents
 * [SSH to your EC2 Instance](#ssh-to-your-ec2-instance)
-* [Hello World Script](#)
+* [Input Name Script](#)
 * [execute the script](#)
 * [Resources](#)
 
@@ -22,7 +22,7 @@ ssh ec2-user@Public-IP-Address
 
 
 ```
-vi hello-world.sh
+vi input-script.sh
 ```
 
 
@@ -31,9 +31,13 @@ vi hello-world.sh
 ```
 #!/bin/bash
 
-#These are are comments
+#These are comments
 
-echo "Hello World"
+echo "Please enter your name: "
+
+read name
+
+echo -e "Hello $name! \n"
 ```
 
 
@@ -42,19 +46,19 @@ echo "Hello World"
 - First Make the script you just created executable using the folllowing command
 
 ```
-chmod +x hello-world.sh
+chmod +x input-script.sh
 ```
 
 - Than run this command to execute it
 
 ```
-./hello-world.sh
+./input-script.sh
 ```
 
 ## What s Next
 
 - we go for a bit more complicated script 
-- follow this link to get on it [link](link).
+- follow this link to get on it [input-script](link).
 
 ## Resources
 
