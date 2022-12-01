@@ -9,3 +9,10 @@
 * [execute the script](#)
 * [Resources](#)
 
+
+
+
+## resources
+
+- [YUM Redhat](https://www.redhat.com/sysadmin/how-manage-packages#:~:text=YUM%20performs%20dependency%20resolution%20when,is%20at%20%2Fetc%2Fyum.)
+- [Check and List Installed YUM Packages](https://www.cyberciti.biz/faq/check-list-installed-packages-in-centos-linux/)
