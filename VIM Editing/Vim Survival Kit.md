@@ -57,41 +57,69 @@ vim /etc/hosts
 ```
 
 
-###
+### Making a Simple Change to a File
 
-Making a Simple Change to a File
 
-Note: The vim80 portion of the command line may be vim81, or even vim82. Use the TAB key to find what is there.
 
-Copy a Vim documentation file for our use:
-cp /usr/share/vim/vim80/doc/help.txt ~/vimhelp.txt
-Edit the file with:
+1. Copy a Vim documentation file for our use:
+```
+cp /usr/share/vim/vim82/doc/help.txt ~/vimhelp.txt
+```
+
+2. Edit the file with:
+
+```
 vim ~/vimhelp.txt
-Navigate to the text VIM - main help file.
-Change the word VIM to Vim by putting the cursor on the I and pressing cw to change the rest of the word to im.
-Then hit ESC to exit Insert Mode.
-Navigate to the m in main and use the ~ character to change it to M.
-Then do the same for the h in help and the f in file.
-Press ESC to ensure you are back in Command Mode.
-Save and exit with:
-:wq
-Changing a System File
+```
 
-Edit the /etc/hosts file with:
+3. Navigate to the text VIM - main help file.
+
+4. Change the word VIM to Vim by putting the cursor on the ```I``` and pressing ```cw``` to change the rest of the word to im.
+
+5. Then hit ```ESC``` to exit Insert Mode.
+
+6. Navigate to the ```m``` in main and use the ```~``` character to change it to ```M```.
+
+7. Then do the same for the ```h``` in help and the ```f``` in file.
+
+8. Press ```ESC``` to ensure you are back in Command Mode.
+
+9. Save and exit with:
+
+```
+:wq
+```
+### Changing a System File
+
+1. Edit the /etc/hosts file with:
+
 sudo -i vim /etc/hosts
-Supply the cloud_user's password (or the required user's).
-Using the cursor keys (if necessary), go to the line that reads:
-127.0.0.1       localhost
-Press A which enters Insert Mode, and moves you to the end of the line.
-Now add a space and snowblower to the end of the line so that it reads:
-127.0.0.1       localhost snowblower
-Save and exit the file by first pressing ESC and then ZZ.
-Verify the change was written with:
-grep snowblower /etc/hosts
-Confirm that the name is resolvable with:
-ping -c 4 snowblower
-The ping should work properly, if not, check the line to ensure there is a space between localhost and snowblower.
-Simple Navigation
+
+2. Supply the cloud_user's password (or the required user's).
+
+3. Using the cursor keys (if necessary), go to the line that reads:
+
+```127.0.0.1       localhost```
+
+4. Press ```A``` which enters Insert Mode, and moves you to the end of the line.
+
+5. Now add a ```space``` and ```snowblower``` to the end of the line so that it reads:
+
+```127.0.0.1       localhost snowblower```
+
+6. Save and exit the file by first pressing ```ESC``` and then ```ZZ```.
+
+7. Verify the change was written with:
+
+```grep snowblower /etc/hosts```
+
+8. Confirm that the name is resolvable with:
+
+```ping -c 4 snowblower```
+
+- The ping should work properly, if not, check the line to ensure there is a space between localhost and snowblower.
+
+### Simple Navigation
 
 Note: You must have created the vimhelp.txt in Task 2 for this to work.
 
@@ -112,7 +140,8 @@ Use N to go back to previous instances.
 Go to the bottom of the file using G.
 Use ?help to search backwards.
 Exit without saving using q!.
-Inserting, Copying, and Deleting Text
+
+### Inserting, Copying, and Deleting Text
 
 Note: You must have created the vimhelp.txt in Task 2 for this to work.
 
@@ -131,7 +160,9 @@ Next create four more blank lines by using 4p.
 Now highlight or select all of the blank lines, except the last one, before Get specific help by putting your cursor on the top blank line, pressing V and moving your cursor to the next-to-last blank line (selecting four lines). Delete those lines by pressing d once.
 While on the remaining blank line below the copied line (the one beginning with ATTENTION:), press i to enter Insert Mode and use the spacebar to insert spaces until the cursor is under the D in Do NOT. Add the text You'll Regret it!, and press ESC to return to Command Mode.
 Move the cursor to the line above the current one, which puts your cursor in between the words to and Exit on that line, and press J to join the line below to the end of the current line.
-Undoing and Redoing
+
+
+### Undoing and Redoing
 
 Note: You must have done the steps in Task 5 for this to work.
 
@@ -153,7 +184,8 @@ Confirm that there is only a single buffer, and that it's the vimhelp.txt buffer
 :ls
 Exit the changed buffer without saving any changes with:
 :q!
-Resources for Getting Help
+
+### Resources for Getting Help
 
 Run vim with no file argument:
 vim
