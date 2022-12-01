@@ -4,9 +4,14 @@
 
 ## Table of Contents
 * [SSH to your EC2 Instance](#ssh-to-your-ec2-instance)
-* [Hello World Script](#)
-* [execute the script](#)
-* [Resources](#)
+* [Creating, Opening, and Exiting a File](#)
+* [Making a Simple Change to a File](#)
+* [Changing a System File](#)
+* [Simple Navigation](#)
+* [Inserting, Copying, and Deleting Text](#)
+* [Undoing and Redoing](#)
+* [Resources for Getting Help](#)
+
 
 
 ## Creating, Opening, and Exiting a File
