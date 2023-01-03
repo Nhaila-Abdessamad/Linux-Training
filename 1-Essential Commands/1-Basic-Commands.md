@@ -10,85 +10,110 @@ In this section, we will take a look at basic linux commands
 
 To print the present working directory. Run **`pwd`** command
 ```
-$ pwd
+pwd
 ```
 
 To see the contents of the directory. Run **`ls`** command
 ```
-$ ls 
+ls 
 ````
 
 To make (or) create a directory. Run **`mkdir`** command
 ```
-$ mkdir Asia
+mkdir Asia
 ```
 
 To make (or) create multiple directories. Run **`mkdir`** command followed by **`<directory_name1> <directory_name2> .. <directory_nameN>`**
 ```
-$ mkdir Europe Africa America
+mkdir Europe Africa America
 ```
 
 To change a directory from the current directory. Run **`cd <directory_name>`**
 ```
-$ cd Asia
+cd Asia
 ```
 
 To recursively created directories. Run **`mkdir -p <directory_name1>/<sub_directory_of_name1>`**
 ```
-$ mkdir -p India/Mumbai
+mkdir -p India/Mumbai
 ```
 
 To go back to one directory up. Run **`cd ..`**
 ```
-$ cd ..
+cd ..
 ```
 
 To go back directly to a home directory of the current user from any location in the system. Run **`cd`**
 ```
-$ cd
+cd
 ```
 
 #### Lets now look at absolute path and relative path
 
-
-
-![Absolute_and_relative_path_working_with_shell_I](../../images/Absolute_and_relative_path_working_with_shell_I.PNG)
 
 **Difference Between Absolute and Relative Path**
 
 - **Absolute Path** : An absolute path is defined as specifying the location of a file or directory from the root directory(/).
 - **Relative Path** : Relative path is defined as the path related to the present working directly(pwd).
 
-To change to a directory with absolute path. Run **`cd <directory_path>`**
+- To change to a directory with absolute path. Run **`cd <directory_path>`**
 ```
-$ cd /home/michael
+cd /home/ubuntu/Africa
 ```
 
-To Change to a directory with relative path. Run **`cd <directoryName>`**
+
+- Now Switch to Asia using absolute Path eventhough you are in Africa 
 ```
-$ cd Asia
+cd /home/ubuntu/Asia
 ```
+
+
+- To Change to a directory with relative path. Run **`cd <directoryName>`**
+```
+cd India
+```
+
+
 
 #### Lets now take a look at alternatives to the **`cd`** command
 
-![pushd_popd](../../images/pushd_popd.PNG)
 
-Alternative to the **`cd`** is the **`pushd\popd`** command. To change directory using pushd, run **`pushd <directory_name>`**
+
+- Alternative to the **`cd`** is the **`pushd\popd`** command. To change directory using pushd, run **`pushd <directory_name>`**
+
+- Use Absolute Path and go to ```etc``` directory usin pushd
+
 ```
-$ pushd /etc
+pushd /etc
 ```
 
-You can change to subdirecties under /etc as many times as you wish
+- To see the contents of the directory. Run **`ls`** command
 ```
-$ pushd /var
-$ pushd /tmp
-$ pwd
+ls 
+````
+
+- You can change to subdirecties under ```etc``` as many times as you wish
+
+- Now Use Absolute Path and go to ```var``` directory using pushd
+```
+pushd /var
+```
+
+- Now Use Absolute Path and go to ```tmp``` directory using pushd
+```
+pushd /tmp
+```
+
+- if you notice the output of this last command, you have created a STACK of directories that you can go back hrough
+```
+pwd
+```
 /etc/var/tmp
 ```
 
-To return back to origin directory(say your home directory), use the **`popd`** command
+- To return back to previous directory, use the **`popd`** command
 ```
-$ popd
+popd
 ```
 
 #### Now lets move on to look some more basic commands in linux. To learn these commands we will make use of the same directory structure as before, however now there are some new files and directories added as shown in the diagram. The goal of this task is to make sure the directory structure looks like the below diagram .
