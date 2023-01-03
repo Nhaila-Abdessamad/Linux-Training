@@ -54,8 +54,12 @@ Expected Output
 
 <details>
 <summary>Solution</summary>
+<ul><li>Create The script using the following command</li></ul>
+<pre>vim hello-world.sh</pre>
+<ul><li>Create The script using the following command</li></ul>
+<pre>vim hello-world.sh</pre>
+<pre>#!/bin/bash<br># Text to the right of a '#' is treated as a comment - below is the shell command<br>echo 'Hello, World!'</pre>
 
-<pre>$ #!/bin/bash<br># Text to the right of a '#' is treated as a comment - below is the shell command<br>echo 'Hello, World!'</pre>
 </details>
 
 Solution
