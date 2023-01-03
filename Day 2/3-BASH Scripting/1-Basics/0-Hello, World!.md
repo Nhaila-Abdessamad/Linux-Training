@@ -22,7 +22,7 @@ To find out what is currently active shell, and what is its path, type the highl
 ps | grep $$
 ```
 
-> 987 tty1      00:00:00 bash  # This response shows that the shell you are using is of type 'bash'. next find out the full path of the shell interpreter
+> 987 tty1      00:00:00 bash  <--- This response shows that the shell you are using is of type 'bash'. next find out the full path of the shell interpreter
 
 
 
