@@ -5,7 +5,7 @@ Tutorial
 
 - Shell programming can be accomplished by directly executing shell commands at the shell prompt or by storing them in the order of execution, in a text file, called a shell script,
 - and then executing the shell script.
-- To execute, simply write the shell script file name, once the file has execute permission (chmod +x filename).
+- To execute, simply write the shell script file name, once the file has execute permission ```chmod +x filename```.
 
 - The first line of the shell script file begins with a "sha-bang" (#!) which is not read as a comment, followed by the full path where the shell interpreter is located.
 - This path, tells the operating system that this file is a set of commands to be fed into the interpreter indicated.
@@ -37,17 +37,26 @@ which bash
 
 Exercise
 -------------
+Create a hello-world.sh script using vim Editor
 Use the "echo" command to print the line "Hello, World!".
 
 Tutorial Code
 -------------
     #!/bin/bash
-    # Text to the right of a '#' is treated as a comment - below is the shell command
+    # Copy This Code and Modify it to show Hello World after Execution
     echo 'Goodbye, World!'
 
 Expected Output
 ---------------
 > Hello, World!
+
+
+
+<details>
+<summary>Solution</summary>
+<br>
+This is how you dropdown.
+</details>
 
 Solution
 --------
