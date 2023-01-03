@@ -32,7 +32,7 @@ ps | grep $$
 which bash
 ```
 
-> /bin/bash  <--- This response shows the full execution path of the shell interpreter. Make sure that the "sha-bang" line at the beginning of your script, matches this same execution path.
+> /usr/bin/bash  <--- This response shows the full execution path of the shell interpreter. Make sure that the "sha-bang" line at the beginning of your script, matches this same execution path.
 
 
 Exercise
@@ -47,7 +47,7 @@ Tutorial Code
 
 Expected Output
 ---------------
-    Hello, World!
+> Hello, World!
 
 Solution
 --------
