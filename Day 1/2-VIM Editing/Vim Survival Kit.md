@@ -16,7 +16,17 @@
 
 ## Creating, Opening, and Exiting a File
 
+1. Create vimTraining Directory
 
+```
+mkdir vimTraining
+```
+
+2. Cd into it 
+
+```
+cd vimTraining
+```
 ### Sub-Task 1a - Create a New File, Save and Exit
 
 1. Open Vim:
@@ -74,13 +84,13 @@ vim /etc/hosts
 
 1. Copy a Vim documentation file for our use:
 ```
-cp /usr/share/vim/vim82/doc/help.txt ~/vimhelp.txt
+cp /usr/share/vim/vim82/doc/help.txt ~/vimTraining/vimhelp.txt
 ```
 
 2. Edit the file with:
 
 ```
-vim ~/vimhelp.txt
+vim vimhelp.txt
 ```
 
 3. Navigate to the text VIM - main help file.
@@ -104,9 +114,14 @@ vim ~/vimhelp.txt
 
 1. Edit the /etc/hosts file with:
 
+```
 sudo -i vim /etc/hosts
+```
 
+<!---
 2. Supply the cloud_user's password (or the required user's).
+--->
+
 
 3. Using the cursor keys (if necessary), go to the line that reads:
 
@@ -134,9 +149,9 @@ sudo -i vim /etc/hosts
 
 > Note: You must have created the vimhelp.txt in Task 2 for this to work.
 
-1. Edit the ~/vimhelp.txt file:
+1. Edit the vimhelp.txt file:
 ```
-vim ~/vimhelp.txt
+vim vimhelp.txt
 ```
 
 2. Go to the top of the file with ```gg```.
@@ -173,9 +188,9 @@ vim ~/vimhelp.txt
 
 > Note: You must have created the vimhelp.txt in Task 2 for this to work.
 
-1. Edit the ~/vimhelp.txt file:
+1. Edit the vimhelp.txt file:
 ```
-vim ~/vimhelp.txt
+vim vimhelp.txt
 ```
 2. Go to the top of the file with gg and then navigate to the line that starts with Get out of Vim.
 
@@ -262,7 +277,7 @@ vim
 
 9. Navigate to the Vim help documentation directory with:
 
-10. cd /usr/share/vim/vim80/doc  # Remember, it may be vim81!
+10. cd /usr/share/vim/vim82/doc  # Remember, it may be vim83!
 
 11. Use the following command to find what files in the directory have the "motion" keyword in them:
 ```
