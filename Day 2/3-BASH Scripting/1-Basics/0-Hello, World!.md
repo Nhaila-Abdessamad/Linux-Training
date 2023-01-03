@@ -57,7 +57,7 @@ Expected Output
 <br>
 
 <details>
-<summary>Solution</summary>
+<summary><h1>Solution</h1>></summary>
 <ul><li>Create The script using the following command</li></ul>
 <pre>vim hello-world.sh</pre>
 <ul><li>Copy The Following code into the file you just created</li></ul>
