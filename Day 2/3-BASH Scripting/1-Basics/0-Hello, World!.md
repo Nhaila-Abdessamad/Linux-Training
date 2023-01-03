@@ -52,9 +52,7 @@ Expected Output
 
 <br>
 
-<br>
 
-<br>
 
 <details>
 <summary><h1>Solution</h1>></summary>
