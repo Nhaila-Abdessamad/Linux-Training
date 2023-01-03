@@ -12,7 +12,8 @@ Tutorial
 - Note that if the path given at the "sha-bang" is incorrect, then an error message e.g.
 - "Command not found.", may be the result of the script execution. It is common to name the shell script with the ".sh" extension. The first line may look like this:
 
-#!/bin/bash**
+
+> #!/bin/bash**
 
 - Adding comments: any text following the "#" is considered a comment
 
