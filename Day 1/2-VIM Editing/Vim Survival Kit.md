@@ -56,6 +56,8 @@ vim /etc/hosts
 
 2. Press the ``` i ```key to go to Insert Mode, which will cause a W10: Warning: Changing a readonly file error message.
 
+![readOnly]()
+
 3. Use ESC to return to Command Mode and u to ensure that no changes have been made, indicated by a message at the status. line of Already at oldest change.
 
 
