@@ -164,6 +164,8 @@ To move file or directory. Run **`mv <source> <destination>`** command
 mv /home/ubuntu/Europe/Morocco /home/ubuntu/Africa/ (Absolute path)
 ```
 
+or 
+
 ```
 mv Europe/Morocco Africa/ (Relative Path)
 ```
@@ -196,42 +198,52 @@ To print the content of a file. Run **`cat /path/to/<filename>`** command
 $ cat Asia/India/Mumbai/City.txt
 ```
 
+- It's Empty so you will see nothhing.
+
 To add a content to a file with cat(redirect) . Run **`cat > /path/to/<filename>`** command
 ```
 cat > Africa/Egypt/Cairo/City.txt
 ```
-Cairo  
 
-`Type Ctrl + d from keyboard`
+Now Print its Contents with:
+
+```
+cat Africa/Egypt/Cairo/City.txt
+```
+
+type any text you want to add
+
+`Type Ctrl + d from keyboard` to exit
+
 
 To see the content of a file in a scrollable manner. Run **`more /path/to/filename`** command <-- not recommended for large files
 ```
-$ more new_file.txt
+more Africa/Egypt/Cairo/City.txt
 ```
 
 To see the content of a file and navigate throught the file. Run **`less /path/to/filename`** command
 ```
-$ less new_file.txt
+less Africa/Egypt/Cairo/City.txt
 ```
 
 To get the long list of files and directories. Run **`ls -l`** command
 ```
-$ ls -l
+ls -l
 ```
 
 To list all files including the hidden. Run **`ls -la`** command
 ```
-$ ls -a
+ls -a
 ```
 
 To list all the files in the order they were modified. Run **`ls -lt`** command
 ```
-$ ls -lt
+ls -lt
 ```
 
 To list all the files form oldest to newest. Run **`ls -ltr`** command
 ```
-$ ls -ltr
+ls -ltr
 ```
 
 ### Resources
