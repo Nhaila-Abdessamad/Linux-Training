@@ -33,6 +33,8 @@ vim
 ```
 :w myfirstnovel.txt
 ```
+
+![myFirstNovel](https://github.com/Nhaila-Abdessamad/Linux-Training/blob/main/figs/VIM/firstNovel.png)
 5. Then exit Vim with:
 
 > Note: You can specify a filename at the outset, such as in Step 1. Then saving and exiting can skip Step 4, and in Step 5 the command would then be:
