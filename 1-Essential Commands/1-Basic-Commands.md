@@ -5,7 +5,7 @@ In this section, we will take a look at basic linux commands
 - Specifically related to navigation and creating new files and directories.
 - We will do this by completing a simple task using a linux shell.
 
-#### Our goal is to create a directory structure, the top most directory which is **`/home/ubunt`** which is already created as it as a home directory but everything else underneath has to be created. 
+#### Our goal is to create a directory structure, the top most directory which is **`/home/ubuntu`** which is already created as it as a home directory but everything else underneath has to be created. 
 
 
 To print the present working directory. Run **`pwd`** command
@@ -25,18 +25,59 @@ mkdir Asia
 
 To make (or) create multiple directories. Run **`mkdir`** command followed by **`<directory_name1> <directory_name2> .. <directory_nameN>`**
 ```
-mkdir Europe Africa America
+mkdir Europe Africa America 
 ```
+
+To recursively create directories. Run **`mkdir -p <directory_name1>/<sub_directory_of_name1>`**
+
+```
+mkdir -p Asia/India/Munbai
+```
+
+```
+mkdir -p Asia/China
+```
+
+```
+mkdir -p Europe/UK/London
+```
+
+```
+mkdir -p Europe/Morocco
+```
+
+```
+mkdir -p Europe/Morocco
+```
+
+```
+mkdir -p Africa/Egypt/Cairo
+```
+
+
+To create an empty file. Run **`touch /path/to/filename`** command
+
+- Create enmpty file City.txt in Munbai
+```
+$ touch /home/ubuntu/Asia/India/Munbai/City.txt
+```
+
+- Create enmpty file Tottenham.txt in Europe/UK/London
+```
+$ touch /home/ubuntu/Europe/UK/London/Tottenham.txt
+```
+
+
+
+#### Practive Moving Around Directories
+
 
 To change a directory from the current directory. Run **`cd <directory_name>`**
 ```
 cd Asia
 ```
 
-To recursively created directories. Run **`mkdir -p <directory_name1>/<sub_directory_of_name1>`**
-```
-mkdir -p India/Mumbai
-```
+
 
 To go back to one directory up. Run **`cd ..`**
 ```
@@ -92,7 +133,6 @@ pushd /etc
 ls 
 ````
 
-- You can change to subdirecties under ```etc``` as many times as you wish
 
 - Now Use Absolute Path and go to ```var``` directory using pushd
 ```
@@ -121,23 +161,29 @@ popd
 
 To move file or directory. Run **`mv <source> <destination>`** command
 ```
-$ mv /home/michael/Europe/Morocco /home/michael/Africa/ (Absolute path)
-$ mv Europe/Morocco Africa/ (Relative Path)
+mv /home/ubuntu/Europe/Morocco /home/ubuntu/Africa/ (Absolute path)
+```
+
+```
+mv Europe/Morocco Africa/ (Relative Path)
 ```
 
 To rename a directory. Run **`mv <oldname> <newname>`** command
+
 ```
-$ mv Asia/India/Munbai Asia/India/Mumbai
+mv Asia/India/Munbai Asia/India/Mumbai
 ```
 
 To copy a file to a directory. Run **`cp <filename> <destination_directorypath>`** command
+
 ```
-$ cp Asia/India/Mumbai/City.txt Africa/Egypt/Cairo
+cp Asia/India/Mumbai/City.txt Africa/Egypt/Cairo
 ```
 
 To delete a file from a directory. Run **`rm /path/<filename>`** command
+
 ```
-$ rm Europe/UK/London/Tottenham.txt
+rm Europe/UK/London/Tottenham.txt
 ```
 
 To copy a directory recursively. Run **`cp -r <sourcepath> <destinationPath>`** command
@@ -152,15 +198,11 @@ $ cat Asia/India/Mumbai/City.txt
 
 To add a content to a file with cat(redirect) . Run **`cat > /path/to/<filename>`** command
 ```
-$ cat > Africa/Egypt/Cairo/City.txt
-  Cairo
-  `Type Ctrl + d from keyboard`
+cat > Africa/Egypt/Cairo/City.txt
 ```
+Cairo  
 
-To create an empty file. Run **`touch /path/to/filename`** command
-```
-$ touch /home/michael/Asia/China/Country.txt
-```
+`Type Ctrl + d from keyboard`
 
 To see the content of a file in a scrollable manner. Run **`more /path/to/filename`** command <-- not recommended for large files
 ```
