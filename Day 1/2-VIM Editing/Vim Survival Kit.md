@@ -26,6 +26,8 @@ vim
 ```
 2. Press the i key and note that the bottom left says you are in Insert Mode. Type in some text such as: Mimsy were the borogroves or It was a dark and stormy night.
 
+![FirstText](https://github.com/Nhaila-Abdessamad/Linux-Training/blob/main/figs/VIM/My%20First.png)
+
 3. When done entering the text, use ESC to return to Command Mode.
 
 4. Write the new file to disk with:
