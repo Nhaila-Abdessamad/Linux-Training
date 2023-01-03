@@ -56,10 +56,11 @@ Expected Output
 <summary>Solution</summary>
 <ul><li>Create The script using the following command</li></ul>
 <pre>vim hello-world.sh</pre>
-<ul><li>Create The script using the following command</li></ul>
-<pre>vim hello-world.sh</pre>
+<ul><li>Copy The Following code into the file you just created</li></ul>
 <pre>#!/bin/bash<br># Text to the right of a '#' is treated as a comment - below is the shell command<br>echo 'Hello, World!'</pre>
-
+<ul><li>Modify Goodbye with Hello, than save and exit the file</li></ul>
+<ul><li>Make it executable using this Command</li></ul>
+<pre>chmod +x hello-world.sh </pre>
 </details>
 
 Solution
