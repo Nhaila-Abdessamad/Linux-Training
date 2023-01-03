@@ -23,16 +23,17 @@ To find out what is currently active shell, and what is its path, type the highl
 ps | grep $$
 ```
 
-> 987 tty1      00:00:00 bash  <--- This response shows that the shell you are using is of type 'bash'. next find out the full path of the shell interpreter
+> 987 tty1      00:00:00 bash  <--- This response shows that the shell you are using is of type 'bash'. 
 
 
+- next find out the full path of the shell interpreter using the following command
 
+```
+which bash
+```
 
-**which bash**
+> /bin/bash  <--- This response shows the full execution path of the shell interpreter. Make sure that the "sha-bang" line at the beginning of your script, matches this same execution path.
 
-/bin/bash
-
-This response shows the full execution path of the shell interpreter. Make sure that the "sha-bang" line at the beginning of your script, matches this same execution path.
 
 Exercise
 -------------
