@@ -54,11 +54,8 @@ Expected Output
 
 <details>
 <summary>Solution</summary>
-Solution
---------
-    #!/bin/bash
-    # Text to the right of a '#' is treated as a comment - below is the shell command
-    echo 'Hello, World!'
+
+<pre>$ #!/bin/bash<br># Text to the right of a '#' is treated as a comment - below is the shell command<br>echo 'Hello, World!'</pre>
 </details>
 
 Solution
