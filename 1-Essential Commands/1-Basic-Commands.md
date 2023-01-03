@@ -1,14 +1,12 @@
 # Basic Linux Commands
 
-- Take me to the [Video Tutorial](https://kodekloud.com/topic/basic-linux-commands-3/)
 
 In this section, we will take a look at basic linux commands 
 - Specifically related to navigation and creating new files and directories.
 - We will do this by completing a simple task using a linux shell.
 
-#### Our goal is to create a directory structure, the top most directory which is **`/home/michael`** which is already created as it as a home directory but everything else underneath has to be created. 
+#### Our goal is to create a directory structure, the top most directory which is **`/home/ubunt`** which is already created as it as a home directory but everything else underneath has to be created. 
 
-![mkdir_cd_working_with_shell_I](../../images/mkdir_cd_working_with_shell_I.PNG)
 
 To print the present working directory. Run **`pwd`** command
 ```
