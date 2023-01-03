@@ -63,8 +63,4 @@ Expected Output
 <pre>chmod +x hello-world.sh </pre>
 </details>
 
-Solution
---------
-    #!/bin/bash
-    # Text to the right of a '#' is treated as a comment - below is the shell command
-    echo 'Hello, World!'
+
