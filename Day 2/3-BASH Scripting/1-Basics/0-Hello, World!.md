@@ -61,6 +61,8 @@ Expected Output
 <ul><li>Modify Goodbye with Hello, than save and exit the file</li></ul>
 <ul><li>Make it executable using this Command</li></ul>
 <pre>chmod +x hello-world.sh </pre>
+<ul><li>Execute it using this command</li></ul>
+<pre>./hello-world.sh   </pre>
 </details>
 
 
