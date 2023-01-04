@@ -87,7 +87,7 @@ Expected Output
 <pre>vim hello-world.sh</pre>
 <ul><li>Copy The Following code into the file you just created</li></ul>
 <pre>#!/bin/bash<br># Change this code<br>BIRTHDATE="Jan 1, 2000"
-<br>Presents=10<br>BIRTHDAY=`date -d "$BIRTHDATE" +%A`<br><br># Testing code - do not change it<br>if [ "$BIRTHDATE" == "Jan 1, 2000" ] ; then
+Presents=10<br>BIRTHDAY=`date -d "$BIRTHDATE" +%A`<br><br># Testing code - do not change it<br>if [ "$BIRTHDATE" == "Jan 1, 2000" ] ; then
 <br>    echo "BIRTHDATE is correct, it is $BIRTHDATE"<br>fi<br>if [ $Presents == 10 ] ; then<br>    echo "I have received $Presents presents"<br>else
 <br>    echo "Presents is incorrect - please retry"<br>fi<br>if [ "$BIRTHDAY" == "Saturday" ] ; then<br>    echo "I was born on a $BIRTHDAY"<br>else<br>    echo "BIRTHDAY is incorrect - please retry"<br>fi
 </pre>
