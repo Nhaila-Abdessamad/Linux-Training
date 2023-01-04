@@ -33,9 +33,15 @@ Note that when the script runs, it will run the command inside the $() parenthes
 
 Exercise
 --------
-The target of this exercise is to create a string, an integer, and a complex variable using command substitution. The string should be named BIRTHDATE and should contain the text "Jan 1, 2000". The integer should be named Presents and should contain the number 10. The complex variable should be named BIRTHDAY and should contain the full weekday name of the day matching the date in variable BIRTHDATE e.g. Saturday. Note that the 'date' command can be used to convert a date format into a different date format. For example, to convert date value, $date1, to day of the week of date1, use: 
+The target of this exercise is to create a string, an integer, and a complex variable using command substitution.
+The string should be named BIRTHDATE and should contain the text "Jan 1, 2000".
+The integer should be named Presents and should contain the number 10.
+The complex variable should be named BIRTHDAY and should contain the full weekday name of the day matching the date in variable BIRTHDATE e.g. Saturday.
+Note that the 'date' command can be used to convert a date format into a different date format. For example, to convert date value, $date1, to day of the week of date1, use: 
 
-    date -d "$date1" +%A
+```
+date -d "$date1" +%A
+```
 
 Tutorial Code
 -------------
@@ -70,6 +76,26 @@ Expected Output
     I have received 10 presents
     I was born on a Saturday
 
+
+
+
+
+
+<details>
+<summary><h2>Solution</h2></summary>
+<ul><li>Create The script using the following command</li></ul>
+<pre>vim hello-world.sh</pre>
+<ul><li>Copy The Following code into the file you just created</li></ul>
+<pre>#!/bin/bash<br># Change this code<br>BIRTHDATE="Jan 1, 2000"
+<br>Presents=10<br> BIRTHDAY=`date -d "$BIRTHDATE" +%A`<br><br># Testing code - do not change it<br>if [ "$BIRTHDATE" == "Jan 1, 2000" ] ; then
+<br><br><br><br><br><br>
+</pre>
+<ul><li>Modify Goodbye with Hello, than save and exit the file</li></ul>
+<ul><li>Make it executable using this Command</li></ul>
+<pre>chmod +x hello-world.sh </pre>
+<ul><li>Execute it using this command</li></ul>
+<pre>./hello-world.sh   </pre>
+</details>
 Solution
 --------
     #!/bin/bash
