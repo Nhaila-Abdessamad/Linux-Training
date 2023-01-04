@@ -87,8 +87,9 @@ Expected Output
 <pre>vim hello-world.sh</pre>
 <ul><li>Copy The Following code into the file you just created</li></ul>
 <pre>#!/bin/bash<br># Change this code<br>BIRTHDATE="Jan 1, 2000"
-<br>Presents=10<br> BIRTHDAY=`date -d "$BIRTHDATE" +%A`<br><br># Testing code - do not change it<br>if [ "$BIRTHDATE" == "Jan 1, 2000" ] ; then
-<br><br><br><br><br><br>
+<br>Presents=10<br>BIRTHDAY=`date -d "$BIRTHDATE" +%A`<br><br># Testing code - do not change it<br>if [ "$BIRTHDATE" == "Jan 1, 2000" ] ; then
+<br>    echo "BIRTHDATE is correct, it is $BIRTHDATE"<br>fi<br>if [ $Presents == 10 ] ; then<br>    echo "I have received $Presents presents"<br>else
+<br>    echo "Presents is incorrect - please retry"<br>fi<br>if [ "$BIRTHDAY" == "Saturday" ] ; then<br><br><br><br><br><br>
 </pre>
 <ul><li>Modify Goodbye with Hello, than save and exit the file</li></ul>
 <ul><li>Make it executable using this Command</li></ul>
